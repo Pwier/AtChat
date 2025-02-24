@@ -1,0 +1,95 @@
+/* Genel stil ayarları */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, black, gray);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Form kartı */
+form {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin 20%, 20%;
+}
+
+form:hover {
+    transform: translateY(-5px);
+}
+
+/* Başlık */
+form h2 {
+    margin-bottom: 20px;
+    color: #222;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #00b09b;
+    padding-bottom: 10px;
+}
+
+/* Etiketler */
+form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Giriş kutusu */
+form input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #00b09b;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus {
+    border-color: #00796b;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 176, 155, 0.5);
+}
+
+/* Buton */
+form button {
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.4s ease;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #00796b, #6db040);
+    transform: scale(1.05);
+}
+
+/* Responsive için */
+@media (max-width: 500px) {
+    form {
+        padding: 20px 15px;
+    }
+
+    form h2 {
+        font-size: 1.3em;
+    }
+}

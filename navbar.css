@@ -1,0 +1,99 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.username {
+    margin-left: 10px;
+    font-size: 1.1em;
+    color: #bbb;
+}
+
+.nav-right a, .notifications-toggle {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-right a:hover, .notifications-toggle:hover {
+    color: #ffcc00;
+}
+
+#notifications-container {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+    max-height: 300px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.notification-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    font-size: 0.95em;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.btn-accept {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.btn-accept:hover {
+    background-color: #45a049;
+}
+
+.btn-reject {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.btn-reject:hover {
+    background-color: #da190b;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
